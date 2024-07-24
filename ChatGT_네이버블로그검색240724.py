@@ -36,10 +36,10 @@ for page in range(1, 100):
             blog_address = "" 
             blog_address_title = ""
         
-        #<span class="fds-info-sub-inner-text B8JXUcm_QYlAFsOH6qCs">2024.06.04.</span>
+        #<span class="fds-info-sub-inner-text B8JXUcm_QYlAFsOH6qCs">2024.05.23.</span>
         post_date_elem = post.find('span', {'class':'fds-info-sub-inner-text B8JXUcm_QYlAFsOH6qCs'})
         post_date = post_date_elem.text if post_date_elem else ""
-        post_title_elem = post.find("a", attrs={"class":"IPXEr_it0BA1OpoWoFF7 fds-comps-right-image-text-title"})
+        post_title_elem = post.find("span", attrs={"class":"B8JXUcm_QYlAFsOH6qCs"})
         post_title = post_title_elem.text if post_title_elem else "" 
 
         print(blog_address)
